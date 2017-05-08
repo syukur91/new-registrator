@@ -1,0 +1,31 @@
+package: .
+import:
+- package: github.com/cenkalti/backoff
+- package: github.com/coreos/go-etcd
+  subpackages:
+  - etcd
+- package: github.com/fsouza/go-dockerclient
+- package: github.com/gliderlabs/pkg
+  subpackages:
+  - usage
+- package: github.com/gliderlabs/registrator
+  subpackages:
+  - consul
+  - consulkv
+  - etcd
+  - skydns2
+  - zookeeper
+- package: github.com/hashicorp/consul
+  subpackages:
+  - api
+- package: github.com/hashicorp/go-cleanhttp
+- package: github.com/samuel/go-zookeeper
+  subpackages:
+  - zk
+- package: gopkg.in/coreos/go-etcd.v0
+  subpackages:
+  - etcd
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
